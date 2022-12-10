@@ -1,0 +1,10 @@
+.html-canvas {
+  border: 1px solid black;
+
+  /* 幅調整 */
+  /* 何も設定していない場合には、inline要素で、150px高さと300px幅になる */
+  display: block;
+  width: 680px;
+  height: 340px;
+  margin: 0 auto;
+}
