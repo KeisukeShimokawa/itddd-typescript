@@ -16,6 +16,11 @@ class CustomEnvironment extends TestEnvironment {
     this.testPath = context.testPath;
     // @ts-expect-error
     this.docblockPragmas = context.docblockPragmas;
+
+    console.log(context.testPath);
+    console.log(context.docblockPragmas);
+
+    this.global.sampleHello = "hi";
   }
 
   async setup() {
@@ -34,6 +39,7 @@ class CustomEnvironment extends TestEnvironment {
   }
 
   async handleTestEvent(event: Circus.Event) {
+    // https://github.com/facebook/jest/blob/main/packages/jest-types/src/Circus.ts
     console.log(event.name);
   }
 }

@@ -3,6 +3,8 @@
     "strict": true,
     "target": "esnext",
     "module": "commonjs",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
